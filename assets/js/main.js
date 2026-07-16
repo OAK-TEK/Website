@@ -1,8 +1,7 @@
 /* ============================================
-   OAK TEK — oaktek.org
-   Vanilla JS: ScrollFloat, SpotlightCard, Mobile Nav
+   OAK TEK — oaktek.org v2.0
+   ScrollFloat, SpotlightCard, Countdowns, Mobile Nav
    ============================================ */
-
 (function () {
   'use strict';
 
@@ -12,18 +11,16 @@
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
       nav.classList.toggle('site-nav--open');
-      var expanded = nav.classList.contains('site-nav--open');
-      toggle.setAttribute('aria-expanded', String(expanded));
+      toggle.setAttribute('aria-expanded', String(nav.classList.contains('site-nav--open')));
     });
   }
 
-  /* --- ScrollFloat: character-by-character reveal on scroll --- */
+  /* --- ScrollFloat --- */
   var scrollFloats = document.querySelectorAll('.scroll-float');
   if (scrollFloats.length > 0 && 'IntersectionObserver' in window) {
     scrollFloats.forEach(function (el) {
       var textSpan = el.querySelector('.scroll-float__text');
       if (!textSpan) return;
-
       var text = textSpan.textContent || '';
       textSpan.innerHTML = '';
       text.split('').forEach(function (char, i) {
@@ -34,7 +31,6 @@
         textSpan.appendChild(span);
       });
     });
-
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -43,15 +39,13 @@
         }
       });
     }, { threshold: 0.15 });
-
     scrollFloats.forEach(function (el) { observer.observe(el); });
   } else {
-    /* Fallback: show immediately */
     scrollFloats.forEach(function (el) { el.classList.add('scroll-float--visible'); });
   }
 
   /* --- SpotlightCard: radial gradient follows cursor --- */
-  var spotlightCards = document.querySelectorAll('.product-card');
+  var spotlightCards = document.querySelectorAll('.product-card, .hero__app-card');
   spotlightCards.forEach(function (card) {
     card.addEventListener('mousemove', function (e) {
       var rect = card.getBoundingClientRect();
@@ -59,6 +53,41 @@
       card.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
     });
   });
+
+  /* --- Countdown Timers --- */
+  var countdowns = document.querySelectorAll('[data-countdown]');
+  if (countdowns.length > 0) {
+    function updateCountdowns() {
+      var now = Date.now();
+      countdowns.forEach(function (el) {
+        var target = new Date(el.getAttribute('data-countdown')).getTime();
+        var diff = target - now;
+        var timerEl = el.querySelector('.countdown-card__timer');
+        if (!timerEl) return;
+
+        if (diff <= 0) {
+          timerEl.textContent = 'Launched!';
+          el.classList.add('countdown-card--launched');
+          var labels = el.querySelector('.countdown-card__timer-labels');
+          if (labels) labels.style.display = 'none';
+          return;
+        }
+
+        var d = Math.floor(diff / 86400000);
+        var h = Math.floor((diff % 86400000) / 3600000);
+        var m = Math.floor((diff % 3600000) / 60000);
+        var s = Math.floor((diff % 60000) / 1000);
+
+        timerEl.textContent =
+          String(d).padStart(2, '0') + ':' +
+          String(h).padStart(2, '0') + ':' +
+          String(m).padStart(2, '0') + ':' +
+          String(s).padStart(2, '0');
+      });
+    }
+    updateCountdowns();
+    setInterval(updateCountdowns, 1000);
+  }
 
   /* --- Contact form: mailto fallback --- */
   var contactForm = document.querySelector('.contact-form');
@@ -68,16 +97,10 @@
       var name = contactForm.querySelector('[name="name"]');
       var email = contactForm.querySelector('[name="email"]');
       var message = contactForm.querySelector('[name="message"]');
-
       if (!name || !email || !message) return;
 
       var subject = encodeURIComponent('Contact from ' + name.value + ' via oaktek.org');
-      var body = encodeURIComponent(
-        'Name: ' + name.value + '\n' +
-        'Email: ' + email.value + '\n\n' +
-        message.value
-      );
-
+      var body = encodeURIComponent('Name: ' + name.value + '\nEmail: ' + email.value + '\n\n' + message.value);
       window.location.href = 'mailto:oaktechnologiesfze@gmail.com?subject=' + subject + '&body=' + body;
 
       var notice = contactForm.querySelector('.form-notice');
