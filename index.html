@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OAK TEK — Independent App Studio</title>
+  <meta name="description" content="OAK TEK is an independent app studio based in Dubai. We build sharp, focused tools for the hobbies you care about.">
   <meta name="theme-color" content="#321857">
-  <link rel="icon" type="image/jpeg" href="/assets/img/favicon.jpg">
-  <link rel="apple-touch-icon" href="/assets/img/favicon.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWYTV5YEQL"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YWYTV5YEQL');</script>
-  <title>OAK TEK: Independent App Studio | LootPick &amp; Open Chord</title>
-  <meta name="description" content="OAK TEK is an independent app studio in Dubai building LootPick, a game deal tracker for Android, iOS and web, and Open Chord, a virtual guitar companion. Small apps for the hobbies you love.">
-  <link rel="canonical" href="https://oaktek.org/">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://oaktek.org/">
-  <meta property="og:site_name" content="OAK TEK">
-  <meta property="og:title" content="OAK TEK: Independent App Studio">
-  <meta property="og:description" content="We build apps for the hobbies you love. LootPick tracks game prices. Open Chord teaches guitar.">
+  <link rel="icon" href="/assets/img/favicon.jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OAK TEK — Independent App Studio">
+  <meta property="og:description" content="We build sharp, focused tools for the hobbies you care about. Game deals, guitar chords — no bloat, just apps that work.">
   <meta property="og:image" content="https://oaktek.org/assets/img/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://oaktek.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OAK TEK">
+
+  <!-- X (Twitter) Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="OAK TEK: Independent App Studio">
-  <meta name="twitter:description" content="We build apps for the hobbies you love. LootPick tracks game prices. Open Chord teaches guitar.">
+  <meta name="twitter:title" content="OAK TEK — Independent App Studio">
+  <meta name="twitter:description" content="We build sharp, focused tools for the hobbies you care about. Game deals, guitar chords — no bloat, just apps that work.">
   <meta name="twitter:image" content="https://oaktek.org/assets/img/og-image.jpg">
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "OAK TEK",
-    "legalName": "OAK TEK - FZCO",
-    "url": "https://oaktek.org/",
+    "legalName": "OAK TEK FZCO",
+    "url": "https://oaktek.org",
     "logo": "https://oaktek.org/assets/img/oak-tek-logo-purple.png",
+    "description": "Independent app studio based in Dubai. We build sharp, focused tools for the hobbies you care about.",
     "email": "oaktechnologiesfze@gmail.com",
-    "description": "Independent app studio building small apps for the hobbies you love.",
     "foundingDate": "2026",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Dubai",
-      "addressRegion": "Dubai",
       "addressCountry": "AE"
     },
     "sameAs": [
@@ -52,136 +47,159 @@
     ]
   }
   </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWYTV5YEQL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YWYTV5YEQL');</script>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to content</a>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a href="/" class="site-header__logo" aria-label="OAK TEK home">
-        <img src="/assets/img/oak-tek-logo-purple.png" alt="OAK TEK independent app studio logo" width="40" height="40">
-        <div class="site-header__wordmark">
-          <span class="site-header__wordmark-oak">OAK</span>
-          <span class="site-header__wordmark-tek">TEK</span>
-        </div>
-      </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="/" class="site-nav__link site-nav__link--active">Home</a>
-        <a href="/products/" class="site-nav__link">Products</a>
-        <a href="/about/" class="site-nav__link">About</a>
-        <a href="/contact/" class="site-nav__link">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <main id="main-content">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Nav -->
+  <nav class="nav" aria-label="Main navigation">
+    <a href="/" class="nav__brand">
+      <img src="/assets/img/oak-tek-logo-purple.png" alt="OAK TEK logo" class="nav__logo" width="48" height="48">
+      <div class="nav__wordmark">OAK<span>TEK</span></div>
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/products/">Products</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+    </button>
+  </nav>
+
+  <main id="main">
+    <!-- Hero -->
     <section class="hero">
-      <div class="hero__grid">
+      <div class="hero__inner">
         <div class="hero__content">
-          <span class="hero__eyebrow">Independent app studio</span>
-          <h1>We build apps for the hobbies you love.</h1>
-          <p class="hero__sub">We're a small independent studio based in Dubai. We pick everyday problems worth solving and turn them into simple, focused apps that make your favorite things easier and more fun. Whether you're hunting for game deals or learning your first chord, we've got something in the works for you.</p>
-          <div class="hero__cta-row">
-            <div class="star-border">
-              <div class="star-border__glow-bottom"></div>
-              <div class="star-border__glow-top"></div>
-              <a href="/products/" class="btn btn--gold">Meet LootPick</a>
-            </div>
-            <a href="/about/" class="btn btn--outline-light">About us</a>
+          <span class="hero__eyebrow">Independent App Studio</span>
+          <h1 class="scroll-float">We build apps for the hobbies you love.</h1>
+          <p class="hero__text">Independent studio, Dubai. We find the everyday problems in your hobbies and build focused tools to solve them. No bloat, no filler — just apps that do the job.</p>
+          <div class="hero__ctas">
+            <a href="/products/" class="btn btn--primary star-border">Meet our apps</a>
+            <a href="/about/" class="btn btn--outline">About us</a>
           </div>
-          <div class="hero__status">
-            <span class="hero__status-dot"></span>
+          <div class="hero__ticker">
+            <span class="hero__ticker-dot"></span>
             LootPick launches on Android August 31
           </div>
         </div>
-        <div class="hero__spotlight">
-          <div class="hero__app-card">
-            <div class="hero__app-card-header">
-              <span class="hero__app-card-label">Now in beta</span>
-              <span class="hero__app-card-badge">S-Rank</span>
-            </div>
-            <img src="/assets/img/lootpick-icon.png" alt="LootPick game deal price tracker app icon" width="290" height="290">
-            <p>Track game prices. Buy at the perfect moment.</p>
-            <a href="https://lootpick.quest" target="_blank" rel="noopener" class="btn btn--green-ghost" style="align-self:stretch; text-align:center;">See what it does →</a>
+
+        <!-- LootPick spotlight card -->
+        <a href="https://lootpick.quest" target="_blank" rel="noopener" class="hero-card" id="spotlight-card" aria-label="LootPick — track game prices and buy at the perfect moment">
+          <div class="hero-card__top">
+            <span class="hero-card__label">Launching Aug 31</span>
+            <span class="hero-card__badge">S-RANK</span>
           </div>
-        </div>
+          <img src="/assets/img/lootpick-icon.png" alt="LootPick app icon" class="hero-card__icon" width="120" height="120" loading="lazy">
+          <p class="hero-card__tagline">Track game prices. Buy at the perfect moment.</p>
+          <span class="hero-card__cta">See what it does →</span>
+        </a>
       </div>
     </section>
 
+    <!-- Products overview -->
     <section class="section section--white">
-      <div class="container">
-        <div style="max-width:640px; margin-bottom:56px;">
-          <h2 class="scroll-float section__heading"><span class="scroll-float__text">Our Products</span></h2>
-          <p style="font-family:'Inter',sans-serif; font-size:15px; color:#555; margin-top:16px;">The things we're building right now.</p>
-        </div>
-        <div class="product-grid">
-          <article class="product-card">
-            <div class="product-card__header">
-              <div class="product-card__icon product-card__icon--lootpick">
-                <img src="/assets/img/lootpick-icon.png" alt="LootPick game deal tracker icon" width="56" height="56" loading="lazy">
-              </div>
-              <span class="product-card__badge">Launching Aug 31</span>
+      <div class="section__inner">
+        <h2 class="section__heading scroll-float">Our Products</h2>
+        <p class="section__subtext">The things we're building right now.</p>
+        <div class="products-grid">
+          <!-- LootPick -->
+          <div class="product-card product-card--lp">
+            <div class="product-card__top">
+              <img src="/assets/img/lootpick-icon.png" alt="LootPick icon" class="product-card__icon" width="48" height="48" loading="lazy">
+              <span class="product-card__badge product-card__badge--green">Launching Aug 31</span>
             </div>
             <h3>LootPick</h3>
             <p>The one-stop shop for gamers hunting the right price. Add a game, we track it, we notify you, you buy it.</p>
-            <a href="/products/" class="btn--link">Explore LootPick →</a>
-          </article>
-          <article class="product-card">
-            <div class="product-card__header">
-              <div class="product-card__icon product-card__icon--openchord">
-                <img src="/assets/img/openchord-logo.png" alt="Open Chord virtual guitar companion icon" width="56" height="56" loading="lazy">
-              </div>
-              <span class="product-card__badge">Coming Soon</span>
+            <a href="/products/#lootpick" class="product-card__link">Explore LootPick →</a>
+          </div>
+          <!-- Open Chord -->
+          <div class="product-card product-card--oc">
+            <div class="product-card__top">
+              <img src="/assets/img/openchord-logo.png" alt="Open Chord icon" class="product-card__icon" width="48" height="48" loading="lazy">
+              <span class="product-card__badge product-card__badge--gold">Launching July 31</span>
             </div>
             <h3>Open Chord</h3>
-            <p>Your virtual guitar companion. Learn, tune, and play the right way, from day one.</p>
-            <a href="/products/" class="btn--link">Explore Open Chord →</a>
-          </article>
+            <p>Your virtual guitar companion. Learn chords, tune up, and play the right way — from day one.</p>
+            <a href="/products/#openchord" class="product-card__link">Explore Open Chord →</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--off-white">
-      <div class="what-we-do">
-        <span class="section__eyebrow">What We Do</span>
-        <h2 class="scroll-float"><span class="scroll-float__text">Everyday problems, simple solutions.</span></h2>
-        <p style="font-family:'Inter',sans-serif; font-size:17px; line-height:1.7; color:#555;">We're an independent app developer with a soft spot for solving the small stuff. We do the research, figure out what actually works, and turn it into apps that keep your hobbies stress-free. No bloat, no subscriptions you don't need — just tools that do the job.</p>
-        <div>
-          <a href="/about/" class="btn btn--outline-dark" style="margin-top:16px;">Learn about us →</a>
+    <!-- How we work -->
+    <section class="value-section">
+      <div class="section__inner">
+        <span class="section__eyebrow">How We Work</span>
+        <h2 class="section__heading scroll-float">We scratch our own itch.</h2>
+        <p class="section__subtext">Every app starts with a problem we've hit ourselves. We build the tool we wish existed, then share it.</p>
+        <div class="value-grid">
+          <div class="value-item">
+            <h3>Real problems</h3>
+            <p>We don't chase trends. We pick problems from our own hobbies and build tools that actually solve them.</p>
+          </div>
+          <div class="value-item">
+            <h3>No bloat</h3>
+            <p>Every feature earns its place. We skip the fluff and keep things lean — apps should save you time, not waste it.</p>
+          </div>
+          <div class="value-item">
+            <h3>Ship and iterate</h3>
+            <p>We launch, listen, and improve. Real feedback from real users beats guessing every time.</p>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <h2>Got a question or just want to say hi?</h2>
+      <p>We read every message. Reach out anytime.</p>
+      <a href="/contact/" class="btn btn--primary">Get in touch</a>
+    </section>
   </main>
-  <footer class="site-footer">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <div class="footer__brand-row">
-          <img src="/assets/img/oak-tek-logo-purple.png" alt="OAK TEK" width="44" height="44" loading="lazy">
-          <div class="site-header__wordmark">
-            <span class="site-header__wordmark-oak">OAK</span>
-            <span class="site-header__wordmark-tek">TEK</span>
-          </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand">
+          <img src="/assets/img/oak-tek-logo-white.jpg" alt="OAK TEK" class="footer__brand-logo" width="40" height="40">
+          <div class="footer__brand-name">OAK<span>TEK</span></div>
         </div>
-        <p class="footer__tagline">Small apps for the hobbies you love, built as passion projects.</p>
+        <p class="footer__tagline">Sharp tools for the things you care about.</p>
       </div>
-      <div class="footer__col">
-        <span class="footer__col-title">Navigate</span>
-        <a href="/" class="footer__link">Home</a>
-        <a href="/products/" class="footer__link">Products</a>
-        <a href="/about/" class="footer__link">About</a>
-        <a href="/contact/" class="footer__link">Contact Us</a>
+      <div>
+        <h3 class="footer__heading">Navigate</h3>
+        <ul class="footer__links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/products/">Products</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
       </div>
-      <div class="footer__col">
-        <span class="footer__col-title">Reach us</span>
-        <a href="mailto:oaktechnologiesfze@gmail.com" class="footer__link">oaktechnologiesfze@gmail.com</a>
+      <div>
+        <h3 class="footer__heading">Reach Us</h3>
+        <a href="mailto:oaktechnologiesfze@gmail.com" class="footer__email">oaktechnologiesfze@gmail.com</a>
       </div>
     </div>
     <div class="footer__bottom">
-      <span>&copy; 2026 OAK TEK - FZCO. All rights reserved.</span>
-      <a href="/products/#privacy" class="footer__link">App Privacy Policy</a>
+      <span class="footer__copyright">© 2026 OAK TEK - FZCO. All rights reserved.</span>
+      <a href="/products/#privacy" class="footer__privacy">App Privacy Policy</a>
     </div>
   </footer>
+
   <script src="/assets/js/main.js"></script>
 </body>
 </html>

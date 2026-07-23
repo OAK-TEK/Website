@@ -1,81 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found — OAK TEK</title>
+  <meta name="robots" content="noindex">
   <meta name="theme-color" content="#321857">
-  <link rel="icon" type="image/jpeg" href="/assets/img/favicon.jpg">
-  <link rel="apple-touch-icon" href="/assets/img/favicon.jpg">
+  <link rel="icon" href="/assets/img/favicon.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWYTV5YEQL"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YWYTV5YEQL');</script>
-  <title>Page Not Found | OAK TEK</title>
-  <meta name="robots" content="noindex">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to content</a>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a href="/" class="site-header__logo" aria-label="OAK TEK home">
-        <img src="/assets/img/oak-tek-logo-purple.png" alt="OAK TEK independent app studio logo" width="40" height="40">
-        <div class="site-header__wordmark">
-          <span class="site-header__wordmark-oak">OAK</span>
-          <span class="site-header__wordmark-tek">TEK</span>
-        </div>
-      </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="/" class="site-nav__link site-nav__link--active">Home</a>
-        <a href="/products/" class="site-nav__link">Products</a>
-        <a href="/about/" class="site-nav__link">About</a>
-        <a href="/contact/" class="site-nav__link">Contact</a>
-      </nav>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="/" class="nav__brand">
+      <img src="/assets/img/oak-tek-logo-purple.png" alt="OAK TEK logo" class="nav__logo" width="48" height="48">
+      <div class="nav__wordmark">OAK<span>TEK</span></div>
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/products/">Products</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+    </button>
+  </nav>
+  <main>
+    <div class="page-404">
+      <h1>404</h1>
+      <p>This page doesn't exist. Maybe it moved, maybe it never did.</p>
+      <a href="/" class="btn btn--primary">Back to home</a>
     </div>
-  </header>
-  <main id="main-content">
-    <section class="section section--white">
-      <div class="four-oh-four">
-        <div class="four-oh-four__code">404</div>
-        <h1>Page not found</h1>
-        <p>The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
-        <a href="/" class="btn btn--purple" style="margin-top:12px;">Back to home</a>
-      </div>
-    </section>
   </main>
-  <footer class="site-footer">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <div class="footer__brand-row">
-          <img src="/assets/img/oak-tek-logo-purple.png" alt="OAK TEK" width="44" height="44" loading="lazy">
-          <div class="site-header__wordmark">
-            <span class="site-header__wordmark-oak">OAK</span>
-            <span class="site-header__wordmark-tek">TEK</span>
-          </div>
-        </div>
-        <p class="footer__tagline">Small apps for the hobbies you love, built as passion projects.</p>
-      </div>
-      <div class="footer__col">
-        <span class="footer__col-title">Navigate</span>
-        <a href="/" class="footer__link">Home</a>
-        <a href="/products/" class="footer__link">Products</a>
-        <a href="/about/" class="footer__link">About</a>
-        <a href="/contact/" class="footer__link">Contact Us</a>
-      </div>
-      <div class="footer__col">
-        <span class="footer__col-title">Reach us</span>
-        <a href="mailto:oaktechnologiesfze@gmail.com" class="footer__link">oaktechnologiesfze@gmail.com</a>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <span>&copy; 2026 OAK TEK - FZCO. All rights reserved.</span>
-      <a href="/products/#privacy" class="footer__link">App Privacy Policy</a>
-    </div>
-  </footer>
   <script src="/assets/js/main.js"></script>
 </body>
 </html>

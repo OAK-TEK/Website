@@ -1,126 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — OAK TEK</title>
+  <meta name="description" content="Get in touch with OAK TEK. Questions about LootPick, Open Chord, or anything else — we read every message.">
   <meta name="theme-color" content="#321857">
-  <link rel="icon" type="image/jpeg" href="/assets/img/favicon.jpg">
-  <link rel="apple-touch-icon" href="/assets/img/favicon.jpg">
+  <link rel="icon" href="/assets/img/favicon.jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — OAK TEK">
+  <meta property="og:description" content="Get in touch with OAK TEK. Questions about LootPick, Open Chord, or anything else — we read every message.">
+  <meta property="og:image" content="https://oaktek.org/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://oaktek.org/contact/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OAK TEK">
+
+  <!-- X (Twitter) Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — OAK TEK">
+  <meta name="twitter:description" content="Questions about LootPick, Open Chord, or anything else — we read every message.">
+  <meta name="twitter:image" content="https://oaktek.org/assets/img/og-image.jpg">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWYTV5YEQL"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YWYTV5YEQL');</script>
-  <title>Contact OAK TEK — Get in Touch</title>
-  <meta name="description" content="Questions, partnership ideas, or feedback on our apps? Reach out to OAK TEK — we'd love to hear from you.">
-  <link rel="canonical" href="https://oaktek.org/contact/">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://oaktek.org/contact/">
-  <meta property="og:site_name" content="OAK TEK">
-  <meta property="og:title" content="Contact OAK TEK">
-  <meta property="og:description" content="Questions, partnership ideas, or feedback? Get in touch.">
-  <meta property="og:image" content="https://oaktek.org/assets/img/og-image.jpg">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Contact OAK TEK">
-  <meta name="twitter:description" content="Questions, partnership ideas, or feedback? Get in touch.">
-  <meta name="twitter:image" content="https://oaktek.org/assets/img/og-image.jpg">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to content</a>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a href="/" class="site-header__logo" aria-label="OAK TEK home">
-        <img src="/assets/img/oak-tek-logo-purple.png" alt="OAK TEK independent app studio logo" width="40" height="40">
-        <div class="site-header__wordmark">
-          <span class="site-header__wordmark-oak">OAK</span>
-          <span class="site-header__wordmark-tek">TEK</span>
-        </div>
-      </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="/" class="site-nav__link">Home</a>
-        <a href="/products/" class="site-nav__link">Products</a>
-        <a href="/about/" class="site-nav__link">About</a>
-        <a href="/contact/" class="site-nav__link site-nav__link--active">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <main id="main-content">
-    <section class="page-header">
-      <div class="container">
-        <span class="page-header__eyebrow">Contact</span>
-        <h1>Say hello.</h1>
-        <p>Questions, partnership ideas, or feedback on our apps? Drop us a note and we'll get back to you.</p>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Main navigation">
+    <a href="/" class="nav__brand">
+      <img src="/assets/img/oak-tek-logo-purple.png" alt="OAK TEK logo" class="nav__logo" width="48" height="48">
+      <div class="nav__wordmark">OAK<span>TEK</span></div>
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/products/">Products</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/" class="active">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+    </button>
+  </nav>
+
+  <main id="main">
+    <section class="contact-hero">
+      <div class="contact-hero__inner">
+        <span class="section__eyebrow">Contact</span>
+        <h1 class="scroll-float">Get in touch.</h1>
+        <p>Questions, feedback, ideas — we read every message.</p>
       </div>
     </section>
-    <section class="section section--white">
-      <div class="contact-grid">
-        <form class="contact-form" novalidate>
-          <div class="form-group">
+
+    <section class="contact-section">
+      <div class="contact-section__inner">
+        <!-- Form -->
+        <div class="contact-form">
+          <form id="contact-form" action="mailto:oaktechnologiesfze@gmail.com" method="POST" enctype="text/plain">
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your full name">
-          </div>
-          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
-          </div>
-          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required placeholder="What can we help you with?"></textarea>
+            <textarea id="message" name="message" placeholder="What can we help you with?" required></textarea>
+
+            <button type="submit" class="btn btn--primary">Send message</button>
+          </form>
+        </div>
+
+        <!-- Sidebar: email + socials grouped by app -->
+        <div class="contact-sidebar">
+          <div class="contact-email-block">
+            <div class="contact-email-block__label">Email us directly</div>
+            <a href="mailto:oaktechnologiesfze@gmail.com">oaktechnologiesfze@gmail.com</a>
           </div>
-          <button type="submit" class="btn btn--purple" style="align-self:flex-start; margin-top:8px;">Send message</button>
-          <div class="form-notice" style="display:none; background:rgba(215,169,107,0.2); border:1px solid #D7A96B; color:#321857; padding:14px 18px; border-radius:8px; font-size:14px;">
-            Opening your email app with the message ready to send. If nothing opened, email us directly at <a href="mailto:oaktechnologiesfze@gmail.com" style="color:#321857; text-decoration:underline;">oaktechnologiesfze@gmail.com</a>.
+
+          <!-- LootPick socials -->
+          <div class="contact-app-group">
+            <div class="contact-app-group__name">
+              <img src="/assets/img/lootpick-icon.png" alt="" class="contact-app-group__icon" width="28" height="28">
+              LootPick
+            </div>
+            <div class="social-icons">
+              <a href="https://lootpick.quest" target="_blank" rel="noopener" class="social-icon social-icon--globe" aria-label="LootPick website" title="lootpick.quest">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </a>
+              <a href="https://instagram.com/LootPick.app" target="_blank" rel="noopener" class="social-icon" aria-label="LootPick on Instagram" title="@LootPick.app">
+                <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="https://x.com/LootPick_app" target="_blank" rel="noopener" class="social-icon" aria-label="LootPick on X" title="@LootPick_app">
+                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
           </div>
-        </form>
-        <aside class="contact-aside">
-          <span class="contact-aside__label">Or email us directly</span>
-          <a href="mailto:oaktechnologiesfze@gmail.com">oaktechnologiesfze@gmail.com</a>
-          <span class="contact-aside__label" style="margin-top:12px;">Follow our apps</span>
-          <div class="contact-aside__social-row">
-            <a href="https://instagram.com/LootPick.app" class="platform-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg> @LootPick.app</a>
-            <a href="https://instagram.com/openchord.app" class="platform-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg> @openchord.app</a>
+
+          <!-- Open Chord socials -->
+          <div class="contact-app-group">
+            <div class="contact-app-group__name">
+              <img src="/assets/img/openchord-logo.png" alt="" class="contact-app-group__icon" width="28" height="28">
+              Open Chord
+            </div>
+            <div class="social-icons">
+              <a href="https://instagram.com/openchord.app" target="_blank" rel="noopener" class="social-icon" aria-label="Open Chord on Instagram" title="@openchord.app">
+                <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="https://x.com/OpenChord_app" target="_blank" rel="noopener" class="social-icon" aria-label="Open Chord on X" title="@OpenChord_app">
+                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
           </div>
-          <div class="contact-aside__social-row">
-            <a href="https://x.com/LootPick_app" class="platform-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> @LootPick_app</a>
-            <a href="https://x.com/OpenChord_app" class="platform-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> @OpenChord_app</a>
-          </div>
-        </aside>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <div class="footer__brand-row">
-          <img src="/assets/img/oak-tek-logo-purple.png" alt="OAK TEK" width="44" height="44" loading="lazy">
-          <div class="site-header__wordmark">
-            <span class="site-header__wordmark-oak">OAK</span>
-            <span class="site-header__wordmark-tek">TEK</span>
-          </div>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand">
+          <img src="/assets/img/oak-tek-logo-white.jpg" alt="OAK TEK" class="footer__brand-logo" width="40" height="40">
+          <div class="footer__brand-name">OAK<span>TEK</span></div>
         </div>
-        <p class="footer__tagline">Small apps for the hobbies you love, built as passion projects.</p>
+        <p class="footer__tagline">Sharp tools for the things you care about.</p>
       </div>
-      <div class="footer__col">
-        <span class="footer__col-title">Navigate</span>
-        <a href="/" class="footer__link">Home</a>
-        <a href="/products/" class="footer__link">Products</a>
-        <a href="/about/" class="footer__link">About</a>
-        <a href="/contact/" class="footer__link">Contact Us</a>
+      <div>
+        <h3 class="footer__heading">Navigate</h3>
+        <ul class="footer__links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/products/">Products</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
       </div>
-      <div class="footer__col">
-        <span class="footer__col-title">Reach us</span>
-        <a href="mailto:oaktechnologiesfze@gmail.com" class="footer__link">oaktechnologiesfze@gmail.com</a>
+      <div>
+        <h3 class="footer__heading">Reach Us</h3>
+        <a href="mailto:oaktechnologiesfze@gmail.com" class="footer__email">oaktechnologiesfze@gmail.com</a>
       </div>
     </div>
     <div class="footer__bottom">
-      <span>&copy; 2026 OAK TEK - FZCO. All rights reserved.</span>
-      <a href="/products/#privacy" class="footer__link">App Privacy Policy</a>
+      <span class="footer__copyright">© 2026 OAK TEK - FZCO. All rights reserved.</span>
+      <a href="/products/#privacy" class="footer__privacy">App Privacy Policy</a>
     </div>
   </footer>
+
   <script src="/assets/js/main.js"></script>
 </body>
 </html>
