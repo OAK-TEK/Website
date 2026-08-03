@@ -3,38 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — LootPick</title>
+  <title>Privacy Policy | LootPick</title>
+  <meta name="description" content="Privacy policy for the LootPick app by OAK TEK FZCO.">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#321857">
   <link rel="icon" href="/assets/img/favicon.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <nav class="nav" aria-label="Main navigation">
-    <a href="/" class="nav__brand">
-      <img src="/assets/img/oak-tek-logo-purple.png" alt="OAK TEK logo" class="nav__logo" width="48" height="48">
-      <div class="nav__wordmark">OAK<span>TEK</span></div>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="nav__brand" aria-label="OAK TEK home">
+      <img src="/assets/img/oak-tek-logo-purple.png" alt="OAK TEK logo" class="nav__logo" width="46" height="46">
+      <span class="nav__wordmark">OAK<span>TEK</span></span>
     </a>
     <ul class="nav__links" id="nav-links">
       <li><a href="/">Home</a></li>
-      <li><a href="/products/">Products</a></li>
+      <li><a href="/products/" class="active">Products</a></li>
       <li><a href="/about/">About</a></li>
       <li><a href="/contact/">Contact</a></li>
     </ul>
-    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <svg viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
     </button>
   </nav>
-  <main>
+
+  <main id="main">
     <div class="privacy-content">
-      <h1>LootPick — Privacy Policy</h1>
-      <p>This privacy policy is being prepared and will be published before the app's launch. Check back soon.</p>
-      <p><a href="/products/#lootpick" style="color: var(--purple);">← Back to LootPick</a></p>
+      <h1>LootPick privacy policy</h1>
+      <p>This privacy policy is being prepared and will be published before the app launches.</p>
+      <p><a href="/lootpick/">Back to LootPick</a></p>
     </div>
   </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="/assets/img/oak-tek-logo-purple.png" alt="" class="footer__brand-logo" width="38" height="38" loading="lazy">
+        <span class="footer__brand-name">OAK<span>TEK</span></span>
+      </div>
+      <ul class="footer__nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/products/">Products</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <a href="mailto:oaktechnologiesfze@gmail.com" class="footer__email">oaktechnologiesfze@gmail.com</a>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copyright">&copy; 2026 OAK TEK - FZCO. All rights reserved.</span>
+      <a href="/products/#privacy" class="footer__privacy">App Privacy Policy</a>
+    </div>
+  </footer>
   <script src="/assets/js/main.js"></script>
 </body>
 </html>
