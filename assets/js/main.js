@@ -1,95 +1,71 @@
-// ===== MOBILE NAV TOGGLE =====
-const navToggle = document.getElementById('nav-toggle');
-const navLinks = document.getElementById('nav-links');
-if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', open);
+// ===== MOBILE NAV =====
+(function () {
+  var toggle = document.getElementById('nav-toggle');
+  var links = document.getElementById('nav-links');
+  if (!toggle || !links) return;
+  toggle.addEventListener('click', function () {
+    var open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
-  // Close on link click
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
+  Array.prototype.forEach.call(links.querySelectorAll('a'), function (a) {
+    a.addEventListener('click', function () {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
     });
   });
-}
+})();
 
-// ===== COUNTDOWN TIMERS =====
-function updateCountdowns() {
-  document.querySelectorAll('[data-countdown]').forEach(el => {
-    const target = new Date(el.dataset.countdown).getTime();
-    const now = Date.now();
-    const diff = target - now;
+// ===== COUNTDOWNS =====
+(function () {
+  var els = document.querySelectorAll('[data-countdown]');
+  if (!els.length) return;
 
-    if (diff <= 0) {
-      el.textContent = 'Launched!';
-      el.style.color = '#2d6a2d';
-      const units = el.nextElementSibling;
-      if (units) units.style.display = 'none';
-      return;
-    }
+  function pad(n) { return String(n).padStart(2, '0'); }
 
-    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const s = Math.floor((diff % (1000 * 60)) / 1000);
-
-    el.textContent = `${String(d).padStart(2,'0')}:${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-  });
-}
-
-if (document.querySelector('[data-countdown]')) {
-  updateCountdowns();
-  setInterval(updateCountdowns, 1000);
-}
-
-// ===== SCROLLFLOAT (character-by-character reveal) =====
-document.querySelectorAll('.scroll-float').forEach(el => {
-  const text = el.textContent;
-  el.textContent = '';
-  el.setAttribute('aria-label', text);
-
-  text.split('').forEach((char, i) => {
-    const span = document.createElement('span');
-    span.classList.add('char');
-    span.textContent = char === ' ' ? '\u00A0' : char;
-    span.style.transitionDelay = `${i * 0.025}s`;
-    el.appendChild(span);
-  });
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        el.classList.add('visible');
-        observer.unobserve(el);
+  function tick() {
+    Array.prototype.forEach.call(els, function (el) {
+      var diff = new Date(el.dataset.countdown).getTime() - Date.now();
+      if (diff <= 0) {
+        el.textContent = 'Launched';
+        el.style.color = '#2d6a2d';
+        var units = el.nextElementSibling;
+        if (units && units.classList.contains('countdown-card__units')) units.style.display = 'none';
+        return;
       }
+      var d = Math.floor(diff / 86400000);
+      var h = Math.floor((diff % 86400000) / 3600000);
+      var m = Math.floor((diff % 3600000) / 60000);
+      var s = Math.floor((diff % 60000) / 1000);
+      el.textContent = pad(d) + ':' + pad(h) + ':' + pad(m) + ':' + pad(s);
     });
-  }, { threshold: 0.2 });
+  }
 
-  observer.observe(el);
-});
+  tick();
+  setInterval(tick, 1000);
+})();
 
-// ===== SPOTLIGHTCARD (cursor-following glow) =====
-const spotlightCard = document.getElementById('spotlight-card');
-if (spotlightCard) {
-  spotlightCard.addEventListener('mousemove', e => {
-    const rect = spotlightCard.getBoundingClientRect();
-    spotlightCard.style.setProperty('--x', `${e.clientX - rect.left}px`);
-    spotlightCard.style.setProperty('--y', `${e.clientY - rect.top}px`);
+// ===== SPOTLIGHT CARD =====
+(function () {
+  var card = document.getElementById('spotlight-card');
+  if (!card) return;
+  card.addEventListener('mousemove', function (e) {
+    var r = card.getBoundingClientRect();
+    card.style.setProperty('--x', (e.clientX - r.left) + 'px');
+    card.style.setProperty('--y', (e.clientY - r.top) + 'px');
   });
-}
+})();
 
-// ===== CONTACT FORM (mailto fallback) =====
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-  contactForm.addEventListener('submit', e => {
+// ===== CONTACT FORM (mailto) =====
+(function () {
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
     e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    const subject = encodeURIComponent(`Website inquiry from ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-    window.location.href = `mailto:oaktechnologiesfze@gmail.com?subject=${subject}&body=${body}`;
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    window.location.href = 'mailto:oaktechnologiesfze@gmail.com'
+      + '?subject=' + encodeURIComponent('Website message from ' + name)
+      + '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
   });
-}
+})();
