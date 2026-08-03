@@ -1,0 +1,30 @@
+# OAK TEK
+
+> OAK TEK is an independent app studio based in Dubai, United Arab Emirates. We build focused mobile apps that solve everyday problems in hobbies. Legal entity: OAK TEK FZCO.
+
+We hit road bumps in our own hobbies, so we build the apps we wish existed, then we share them. Open Chord is live on Google Play as of 31 July 2026. LootPick is in development and launches 31 August 2026.
+
+## Products
+
+- [LootPick](https://oaktek.org/lootpick/): Game price tracker. Add games to a watchlist, LootPick tracks prices across digital stores and notifies you when the deal is right. Free with a watchlist limit; LootPick Premium removes the limit. Launches Android 31 August 2026, iOS 15 September 2026, web 30 September 2026.
+- [Open Chord](https://oaktek.org/openchord/): Free guitar learning app for beginners. Chord diagrams, tuner, scales, modes, riffs, and ear training. No subscription, ad supported, all data stored locally on device. Live now on Google Play at https://play.google.com/store/apps/details?id=com.oaktek.openchord. iOS release planned for end of August 2026.
+
+## Pages
+
+- [Home](https://oaktek.org/): Studio overview and both products.
+- [Products](https://oaktek.org/products/): Both apps with launch countdowns and FAQ.
+- [About](https://oaktek.org/about/): Who we are and how we work.
+- [Blog](https://oaktek.org/blog/): Notes on building apps, game price tracking, and learning guitar.
+- [Contact](https://oaktek.org/contact/): Email and social links.
+
+## Optional
+
+- [Open Chord privacy policy](https://oaktek.org/privacy/openchord/): No backend, no tracking, local storage only, AdMob for ads.
+- [LootPick website](https://lootpick.quest): Standalone LootPick site.
+
+## Contact
+
+Google Play (Open Chord): https://play.google.com/store/apps/details?id=com.oaktek.openchord
+Email: oaktechnologiesfze@gmail.com
+Instagram: @LootPick.app, @openchord.app
+X: @LootPick_app, @OpenChord_app
