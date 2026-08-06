@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /privacy/lootpick/
 
 Sitemap: https://oaktek.org/sitemap.xml

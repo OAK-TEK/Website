@@ -7,7 +7,7 @@ We hit road bumps in our own hobbies, so we build the apps we wish existed, then
 ## Products
 
 - [LootPick](https://oaktek.org/lootpick/): Game price tracker. Add games to a watchlist, LootPick tracks prices across digital stores and notifies you when the deal is right. Free with a watchlist limit; LootPick Premium removes the limit. Launches Android 31 August 2026, iOS 15 September 2026, web 30 September 2026.
-- [Open Chord](https://oaktek.org/openchord/): Free guitar learning app for beginners. Chord diagrams, tuner, scales, modes, riffs, and ear training. No subscription, ad supported, all data stored locally on device. Live now on Google Play at https://play.google.com/store/apps/details?id=com.oaktek.openchord. iOS release planned for end of August 2026.
+- [Open Chord](https://oaktek.org/openchord/): Free guitar learning app for beginners. Chord diagrams, tuner, scales, modes, riffs, and ear training. No subscription and no paywalls; advertising is planned for a future update. Learning progress is stored locally on device; anonymous usage analytics can be turned off in the app. Live now on Google Play at https://play.google.com/store/apps/details?id=com.oaktek.openchord. iOS release planned for end of August 2026.
 
 ## Pages
 
@@ -16,15 +16,24 @@ We hit road bumps in our own hobbies, so we build the apps we wish existed, then
 - [About](https://oaktek.org/about/): Who we are and how we work.
 - [Blog](https://oaktek.org/blog/): Notes on building apps, game price tracking, and learning guitar.
 - [Contact](https://oaktek.org/contact/): Email and social links.
+- [Legal](https://oaktek.org/legal/): Privacy policies, terms, and data deletion for both apps.
+
+## Legal
+
+- [Open Chord privacy policy](https://oaktek.org/legal/openchord/privacy/)
+- [Open Chord terms and conditions](https://oaktek.org/legal/openchord/terms/)
+- [Open Chord data deletion](https://oaktek.org/legal/openchord/delete-data/)
+- [LootPick privacy policy](https://oaktek.org/legal/lootpick/privacy/)
+- [LootPick terms of service](https://oaktek.org/legal/lootpick/terms/)
 
 ## Optional
 
-- [Open Chord privacy policy](https://oaktek.org/privacy/openchord/): No backend, no tracking, local storage only, AdMob for ads.
 - [LootPick website](https://lootpick.quest): Standalone LootPick site.
 
 ## Contact
 
 Google Play (Open Chord): https://play.google.com/store/apps/details?id=com.oaktek.openchord
 Email: oaktechnologiesfze@gmail.com
+LinkedIn: https://www.linkedin.com/company/oak-tek
 Instagram: @LootPick.app, @openchord.app
 X: @LootPick_app, @OpenChord_app
