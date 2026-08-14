@@ -16,7 +16,7 @@ We hit road bumps in our own hobbies, so we build the apps we wish existed, then
 - [About](https://oaktek.org/about/): Who we are and how we work.
 - [Blog](https://oaktek.org/blog/): Notes on building apps, game price tracking, and learning guitar.
 - [Contact](https://oaktek.org/contact/): Email and social links.
-- [Legal](https://oaktek.org/legal/): Privacy policies, terms, licences, and data deletion for both apps.
+- [Legal](https://oaktek.org/legal/): Privacy policies, terms, and data deletion for both apps.
 
 ## Legal
 
