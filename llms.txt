@@ -23,6 +23,7 @@ We hit road bumps in our own hobbies, so we build the apps we wish existed, then
 - [Open Chord privacy policy](https://oaktek.org/legal/openchord/privacy/)
 - [Open Chord terms and conditions](https://oaktek.org/legal/openchord/terms/)
 - [Open Chord data deletion](https://oaktek.org/legal/openchord/delete-data/)
+- [Open Chord open source licences](https://oaktek.org/legal/openchord/licences/)
 - [LootPick privacy policy](https://oaktek.org/legal/lootpick/privacy/)
 - [LootPick terms of service](https://oaktek.org/legal/lootpick/terms/)
 
