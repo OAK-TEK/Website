@@ -7,7 +7,7 @@ We hit road bumps in our own hobbies, so we build the apps we wish existed, then
 ## Products
 
 - [LootPick](https://oaktek.org/lootpick/): Game price tracker. Add games to a watchlist, LootPick tracks prices across digital stores and notifies you when the deal is right. Every game gets a Buy Now Score from 0 to 100 with a Buy Now, Watch It or Wait verdict. Free to start. Live on Android and web, iOS coming soon.
-- [Open Chord](https://oaktek.org/openchord/): Free guitar learning app for beginners. Chord diagrams, tuner, scales, modes, riffs, and ear training. No subscription and no paywalls; advertising is planned for a future update. Learning progress is stored locally on device; anonymous usage analytics can be turned off in the app. Live now on Google Play at https://play.google.com/store/apps/details?id=com.oaktek.openchord. iOS coming soon.
+- [Open Chord](https://oaktek.org/openchord/): Free guitar learning app for beginners. Chord diagrams, tuner, scales, modes, riffs, and ear training. No subscription and no paywalls; supported by ads. Learning progress is stored locally on device; anonymous usage analytics can be turned off in the app. Live now on Google Play at https://play.google.com/store/apps/details?id=com.oaktek.openchord. iOS coming soon.
 
 ## Pages
 
