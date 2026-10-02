@@ -5,6 +5,8 @@
   --purple: #321857;
   --purple-light: #4a2578;
   --gold: #D7A96B;
+  /* Gold fails contrast on white (2.1:1); this darker tone clears 5.6:1 for text on light sections. */
+  --gold-text: #8A5A12;
   --gold-soft: rgba(215, 169, 107, 0.15);
   --off-white: #fafaf7;
   --text-dark: #1a1a1a;
@@ -171,13 +173,15 @@ h1, h2, h3, h4 {
 
 .eyebrow {
   display: inline-block;
-  color: var(--gold);
+  color: var(--gold-text);
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 0.85rem;
 }
+
+.hero .eyebrow, .page-hero .eyebrow, .section--purple .eyebrow { color: var(--gold); }
 
 .eyebrow--pill {
   background: rgba(255,255,255,0.1);
@@ -409,7 +413,7 @@ h1, h2, h3, h4 {
   align-items: stretch; margin-bottom: 1.25rem;
 }
 
-/* Light Play badge, sized to match a countdown card exactly */
+/* Light Play badge, sized to match a status card exactly */
 .store-cta {
   display: flex; align-items: center; justify-content: center; gap: 0.85rem;
   background: #fff; color: var(--text-dark);
@@ -443,10 +447,9 @@ h1, h2, h3, h4 {
   text-underline-offset: 3px; font-weight: 500;
 }
 
-/* ===== COUNTDOWNS ===== */
-.countdown-row { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
-
-.countdown-card {
+/* ===== PLATFORM STATUS ===== */
+/* Sized to match .store-cta so Play, web and iOS line up in one row. */
+.status-card {
   background: #fff; border: 1px solid var(--border);
   border-radius: 12px; padding: 1.15rem 1.4rem;
   text-align: center;
@@ -454,28 +457,22 @@ h1, h2, h3, h4 {
   display: flex; flex-direction: column; justify-content: center;
 }
 
-.countdown-card__label {
+.status-card__label {
   font-size: 0.58rem; font-weight: 700; letter-spacing: 0.15em;
-  text-transform: uppercase; color: var(--gold); margin-bottom: 0.2rem;
+  text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.2rem;
 }
 
-.countdown-card__platform {
-  font-family: var(--font-heading); font-weight: 600;
-  font-size: 0.95rem; margin-bottom: 0.45rem;
-}
-
-.countdown-card__timer {
+.status-card__platform {
   font-family: var(--font-heading); font-weight: 700;
-  font-size: 1.35rem; color: var(--purple); letter-spacing: 0.02em;
+  font-size: 1.05rem; margin-bottom: 0.2rem;
 }
 
-.countdown-card__units {
-  display: flex; justify-content: center; gap: 1.05rem;
-  font-size: 0.58rem; font-weight: 600; letter-spacing: 0.1em;
-  text-transform: uppercase; color: var(--text-muted); margin-top: 0.2rem;
+.status-card__state {
+  font-family: var(--font-heading); font-weight: 600;
+  font-size: 0.95rem; color: var(--purple);
 }
 
-.product-detail--lp .countdown-card__timer { color: #2d6a2d; }
+.status-card__note { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.15rem; }
 
 .product-meta { font-size: 0.85rem; color: var(--text-muted); }
 .product-meta a { color: var(--purple); text-decoration: underline; text-underline-offset: 2px; }
@@ -770,11 +767,11 @@ h1, h2, h3, h4 {
   .contact-block { text-align: center; }
   .contact-app-name { justify-content: center; }
 
-  .countdown-row { flex-direction: column; gap: 0.85rem; }
-  .countdown-card { min-width: auto; }
   .store-row { flex-direction: column; gap: 0.85rem; }
+  /* In a column the 200px flex-basis becomes a height, so reset it. */
+  .store-cta, .status-card { flex: none; }
   .store-cta { max-width: none; min-width: 0; }
-  .countdown-card { max-width: none; min-width: 0; }
+  .status-card { max-width: none; min-width: 0; }
 
   .contact-grid { grid-template-columns: 1fr; gap: 2.25rem; }
 

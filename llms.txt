@@ -2,17 +2,17 @@
 
 > OAK TEK is an independent app studio based in Dubai, United Arab Emirates. We build focused mobile apps that solve everyday problems in hobbies. Legal entity: OAK TEK FZCO.
 
-We hit road bumps in our own hobbies, so we build the apps we wish existed, then we share them. Open Chord is live on Google Play as of 31 July 2026. LootPick is in development and launches 31 August 2026.
+We hit road bumps in our own hobbies, so we build the apps we wish existed, then we share them. Open Chord is live on Google Play. LootPick is live on Android and on the web at https://lootpick.quest. Both apps are coming to iOS, currently in review with Apple.
 
 ## Products
 
-- [LootPick](https://oaktek.org/lootpick/): Game price tracker. Add games to a watchlist, LootPick tracks prices across digital stores and notifies you when the deal is right. Free with a watchlist limit; LootPick Premium removes the limit. Launches Android 31 August 2026, iOS 15 September 2026, web 30 September 2026.
-- [Open Chord](https://oaktek.org/openchord/): Free guitar learning app for beginners. Chord diagrams, tuner, scales, modes, riffs, and ear training. No subscription and no paywalls; advertising is planned for a future update. Learning progress is stored locally on device; anonymous usage analytics can be turned off in the app. Live now on Google Play at https://play.google.com/store/apps/details?id=com.oaktek.openchord. iOS release planned for end of August 2026.
+- [LootPick](https://oaktek.org/lootpick/): Game price tracker. Add games to a watchlist, LootPick tracks prices across digital stores and notifies you when the deal is right. Every game gets a Buy Now Score from 0 to 100 with a Buy Now, Watch It or Wait verdict. Free to start. Live on Android and web, iOS coming soon.
+- [Open Chord](https://oaktek.org/openchord/): Free guitar learning app for beginners. Chord diagrams, tuner, scales, modes, riffs, and ear training. No subscription and no paywalls; advertising is planned for a future update. Learning progress is stored locally on device; anonymous usage analytics can be turned off in the app. Live now on Google Play at https://play.google.com/store/apps/details?id=com.oaktek.openchord. iOS coming soon.
 
 ## Pages
 
 - [Home](https://oaktek.org/): Studio overview and both products.
-- [Products](https://oaktek.org/products/): Both apps with launch countdowns and FAQ.
+- [Products](https://oaktek.org/products/): Both apps with platform availability and FAQ.
 - [About](https://oaktek.org/about/): Who we are and how we work.
 - [Blog](https://oaktek.org/blog/): Notes on building apps, game price tracking, and learning guitar.
 - [Contact](https://oaktek.org/contact/): Email and social links.
@@ -36,5 +36,5 @@ We hit road bumps in our own hobbies, so we build the apps we wish existed, then
 Google Play (Open Chord): https://play.google.com/store/apps/details?id=com.oaktek.openchord
 Email: oaktechnologiesfze@gmail.com
 LinkedIn: https://www.linkedin.com/company/oak-tek
-Instagram: @LootPick.app, @openchord.app
+Instagram: @lootpick_app, @openchord_app
 X: @LootPick_app, @OpenChord_app

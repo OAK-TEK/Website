@@ -7,41 +7,19 @@
     var open = links.classList.toggle('open');
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && links.classList.contains('open')) {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.focus();
+    }
+  });
   Array.prototype.forEach.call(links.querySelectorAll('a'), function (a) {
     a.addEventListener('click', function () {
       links.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
     });
   });
-})();
-
-// ===== COUNTDOWNS =====
-(function () {
-  var els = document.querySelectorAll('[data-countdown]');
-  if (!els.length) return;
-
-  function pad(n) { return String(n).padStart(2, '0'); }
-
-  function tick() {
-    Array.prototype.forEach.call(els, function (el) {
-      var diff = new Date(el.dataset.countdown).getTime() - Date.now();
-      if (diff <= 0) {
-        el.textContent = 'Launched';
-        el.style.color = '#2d6a2d';
-        var units = el.nextElementSibling;
-        if (units && units.classList.contains('countdown-card__units')) units.style.display = 'none';
-        return;
-      }
-      var d = Math.floor(diff / 86400000);
-      var h = Math.floor((diff % 86400000) / 3600000);
-      var m = Math.floor((diff % 3600000) / 60000);
-      var s = Math.floor((diff % 60000) / 1000);
-      el.textContent = pad(d) + ':' + pad(h) + ':' + pad(m) + ':' + pad(s);
-    });
-  }
-
-  tick();
-  setInterval(tick, 1000);
 })();
 
 // ===== SPOTLIGHT CARD =====
