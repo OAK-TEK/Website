@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delete Your Open Chord Data | OAK TEK</title>
-  <meta name="description" content="How to delete the data Open Chord holds. Clear everything on your device from the app, and request deletion of anonymous analytics by email.">
+  <meta name="description" content="How to delete the data Open Chord holds. Clear everything on your device from the app, request deletion of anonymous analytics data, and limit advertising data held by Google.">
   <link rel="canonical" href="https://oaktek.org/legal/openchord/delete-data/">
   <meta name="theme-color" content="#321857">
   <link rel="icon" href="/assets/img/favicon.jpg">
 
   <meta property="og:title" content="Delete Your Open Chord Data | OAK TEK">
-  <meta property="og:description" content="How to delete the data Open Chord holds. Clear everything on your device from the app, and request deletion of anonymous analytics by email.">
+  <meta property="og:description" content="How to delete the data Open Chord holds. Clear everything on your device from the app, request deletion of anonymous analytics data, and limit advertising data held by Google.">
   <meta property="og:image" content="https://oaktek.org/assets/img/og-image.jpg">
   <meta property="og:url" content="https://oaktek.org/legal/openchord/delete-data/">
   <meta property="og:type" content="website">
@@ -19,7 +19,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Delete Your Open Chord Data | OAK TEK">
-  <meta name="twitter:description" content="How to delete the data Open Chord holds. Clear everything on your device from the app, and request deletion of anonymous analytics by email.">
+  <meta name="twitter:description" content="How to delete the data Open Chord holds. Clear everything on your device from the app, request deletion of anonymous analytics data, and limit advertising data held by Google.">
   <meta name="twitter:image" content="https://oaktek.org/assets/img/og-image.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,8 +62,9 @@
       <div class="legal__inner">
         <div class="legal__meta"><strong>Open Chord</strong><br>
       Developer: OAK TEK - FZCO<br>
-      Last updated: August 6, 2026</div>
-        <p>This page explains how to request deletion of the data collected by the Open Chord mobile app, published by OAK TEK - FZCO.</p>
+      Last updated: October 2, 2026</div>
+        <p>This page explains how to request deletion of the data collected by the Open Chord mobile app for Android and iOS, published by OAK TEK - FZCO. It covers three kinds of data: data on your device, usage data we hold through PostHog, and data held by Google for advertising and crash reporting.</p>
+
         <h2>Deleting data stored on your device</h2>
         <p>You do not need to contact us. Your practice history, streak, progress, and settings are stored only on your device, and you can remove all of it yourself at any time:</p>
         <ul>
@@ -73,6 +74,8 @@
         <li>Tap <strong>Clear all data</strong> and confirm</li>
         </ul>
         <p>This is immediate and cannot be undone. Uninstalling the app has the same effect.</p>
+        <p><strong>Important:</strong> clearing your data gives your installation a new anonymous ID that is not connected to the old one. If you want us to delete usage data we already hold, copy your anonymous ID first, as described below.</p>
+
         <h2>Deleting usage data we have collected</h2>
         <p>To request deletion of the anonymous usage data collected through the app, follow these steps:</p>
         <ul>
@@ -82,33 +85,50 @@
         </ul>
         <p>We need the anonymous ID because Open Chord has no accounts and we hold no name, email address, or any other detail that would let us find your records without it. If you cannot supply it, we may be unable to act on your request.</p>
         <p>We will confirm and complete deletion within 30 days of receiving your request.</p>
+
         <h2>What gets deleted</h2>
         <p>On request, we delete all analytics records associated with your anonymous ID:</p>
         <ul>
-        <li>Usage events, such as lessons started or completed, practice sessions, tuner and metronome use, and streaks</li>
+        <li>Usage events, such as lessons started or completed, practice sessions, tuner and metronome use, streaks, shares, and error details</li>
         <li>The anonymous analytics identifier itself</li>
         </ul>
-        <h2>Crash reports</h2>
-        <p>Crash reports are handled separately by Google Firebase Crashlytics and are not linked to your analytics identifier. They contain only technical details of a failure and carry their own randomly generated identifier, which we have no way to match to you or to search on. Crashlytics deletes crash reports automatically 90 days after they are recorded, so no action is needed to remove them.</p>
+
+        <h2>Crash reports (Android only)</h2>
+        <p>Crash reports are handled separately by Google Firebase Crashlytics and are not linked to your analytics identifier. They contain only technical details of a failure and carry their own randomly generated identifier, which we have no way to match to you or to search on. Crashlytics deletes crash reports automatically 90 days after they are recorded, so no action is needed to remove them. The iOS app does not send crash reports to Crashlytics.</p>
+
+        <h2>Advertising data held by Google</h2>
+        <p>Open Chord shows adverts supplied by Google AdMob. Google collects advertising data directly from your device, including your advertising ID and IP address. We do not receive this data and cannot search for it or delete it. You can limit or remove it yourself:</p>
+        <ul>
+        <li><strong>Android:</strong> open your device settings, then Google or Privacy, then Ads, and choose to delete your advertising ID or opt out of ad personalisation. Menu names vary by device.</li>
+        <li><strong>iOS:</strong> open Settings, then Privacy and Security, then Tracking, and turn off tracking for Open Chord.</li>
+        <li><strong>Google account controls:</strong> manage how Google personalises adverts at <a href="https://myadcenter.google.com/">myadcenter.google.com</a>.</li>
+        </ul>
+        <p>For other requests about data Google holds, use Google's own privacy tools. Our <a href="/legal/openchord/privacy/">Privacy Policy</a> explains what Google collects.</p>
+
         <h2>What we do not hold</h2>
         <p>There is nothing to delete in these categories, because we never collect them:</p>
         <ul>
         <li>Your name, email address, phone number, or any account</li>
-        <li>Your location, country, city, or stored IP address</li>
+        <li>Your location, country, city, or stored IP address. Google may derive an approximate location from your IP address for adverts, as described above</li>
         <li>Any audio. The tuner analyses sound entirely on your device and no audio is ever recorded or transmitted</li>
         <li>Any recording or replay of your screen</li>
-        <li>Any advertising identifier</li>
+        <li>Your advertising identifier. Google receives it, and we do not</li>
         </ul>
+
         <h2>What may be kept</h2>
         <p>Aggregated statistics that contain no identifier and cannot be traced back to any individual device may be retained. Once your anonymous ID is deleted, no remaining record can be linked to you.</p>
+
         <h2>Stopping collection instead of deleting</h2>
-        <p>If you would rather we simply stop collecting data, you can switch analytics off inside the app. Open the <strong>Guitarist</strong> tab, then <strong>My Profile</strong>, then <strong>Analytics</strong>, and turn the toggle off. No further data is sent from that point on.</p>
+        <p>If you would rather we simply stop collecting data, you can switch analytics off inside the app. Open the <strong>Guitarist</strong> tab, then <strong>My Profile</strong>, then <strong>Analytics</strong>, and turn the toggle off. No further usage data is sent from that point on. The toggle does not control crash reports on Android or advertising.</p>
+
         <h2>Contact</h2>
         <p><strong>OAK TEK - FZCO</strong><br>
         Dubai Silicon Oasis, Dubai, United Arab Emirates<br>
         Trade Licence No. 90142, issued by the Dubai Integrated Economic Zones Authority<br>
         Email: <a href="mailto:oaktechnologiesfze@gmail.com">oaktechnologiesfze@gmail.com</a></p>
-        <p>See also our <a href="/legal/">Privacy Policy</a> and our <a href="/legal/openchord/terms/">Terms and Conditions</a>.</p>
+        <p>See also our <a href="/legal/openchord/privacy/">Privacy Policy</a> and our <a href="/legal/openchord/terms/">Terms and Conditions</a>.</p>
+
+
         <div class="legal__back"><a href="/legal/" class="link-arrow">&larr; All legal documents</a></div>
       </div>
     </section>
