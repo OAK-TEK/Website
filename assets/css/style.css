@@ -477,6 +477,34 @@ h1, h2, h3, h4 {
 .product-meta { font-size: 0.85rem; color: var(--text-muted); }
 .product-meta a { color: var(--purple); text-decoration: underline; text-underline-offset: 2px; }
 
+/* ===== APP SCREENSHOTS ===== */
+/* Scroll-snap row on phones; sits centred as a static row once it fits. */
+.screens {
+  display: flex; gap: 1.25rem; justify-content: flex-start;
+  overflow-x: auto; scroll-snap-type: x mandatory;
+  padding: 0.5rem 0 1.25rem;
+}
+.screen { flex: 0 0 min(220px, 62vw); margin: 0; scroll-snap-align: start; }
+.screen img {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: 720 / 1500; object-fit: cover; object-position: top;
+  border-radius: 24px; border: 1px solid var(--border);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.14);
+  background: var(--purple);
+}
+.screens--oc .screen img { aspect-ratio: 720 / 1410; }
+.screen figcaption, .screen-wide figcaption {
+  margin-top: 0.7rem; font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;
+}
+.screen-wide { margin: 1.5rem 0 0; }
+.screen-wide img {
+  display: block; width: 100%; height: auto;
+  border-radius: 14px; border: 1px solid var(--border);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.14);
+}
+.screen-wide figcaption a { color: var(--purple); text-decoration: underline; text-underline-offset: 2px; }
+@media (min-width: 1000px) { .screens { justify-content: center; overflow-x: visible; } }
+
 /* ===== FAQ ===== */
 .faq { margin-top: 2rem; }
 .faq__item { border-bottom: 1px solid var(--border); padding: 1.1rem 0; }
