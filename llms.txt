@@ -1,13 +1,13 @@
 # OAK TEK
 
-> OAK TEK is an independent app studio based in Dubai, United Arab Emirates. We build focused mobile apps that solve everyday problems in hobbies. Legal entity: OAK TEK FZCO.
+> OAK TEK is an independent app studio based in Dubai, United Arab Emirates. We build focused mobile apps that solve everyday problems in hobbies. Legal entity: OAK TEK - FZCO.
 
-We hit road bumps in our own hobbies, so we build the apps we wish existed, then we share them. Open Chord is live on Google Play. LootPick is live on Android and on the web at https://lootpick.quest. Both apps are coming to iOS, currently in review with Apple.
+We hit road bumps in our own hobbies, so we build the apps we wish existed, then we share them. Open Chord is live on Google Play and the App Store. LootPick is live on Android and on the web at https://lootpick.quest. LootPick is coming to iOS soon.
 
 ## Products
 
 - [LootPick](https://oaktek.org/lootpick/): Game price tracker. Add games to a watchlist, LootPick tracks prices across digital stores and notifies you when the deal is right. Every game gets a Buy Now Score from 0 to 100 with a Buy Now, Watch It or Wait verdict. Free to start. Live on Android and web, iOS coming soon.
-- [Open Chord](https://oaktek.org/openchord/): Free guitar learning app for beginners. Chord diagrams, tuner, scales, modes, riffs, and ear training. No subscription and no paywalls; supported by ads. Learning progress is stored locally on device; anonymous usage analytics can be turned off in the app. Live now on Google Play at https://play.google.com/store/apps/details?id=com.oaktek.openchord. iOS coming soon.
+- [Open Chord](https://oaktek.org/openchord/): Free guitar learning app for beginners. Chord diagrams, tuner, scales, modes, riffs, and ear training. No subscription and no paywalls; supported by ads. Learning progress is stored locally on device; anonymous usage analytics can be turned off in the app. Live now on Google Play at https://play.google.com/store/apps/details?id=com.oaktek.openchord and on the App Store at https://apps.apple.com/ae/app/open-chord-learn-guitar/id6802785798.
 
 ## Pages
 
@@ -34,6 +34,7 @@ We hit road bumps in our own hobbies, so we build the apps we wish existed, then
 ## Contact
 
 Google Play (Open Chord): https://play.google.com/store/apps/details?id=com.oaktek.openchord
+App Store (Open Chord): https://apps.apple.com/ae/app/open-chord-learn-guitar/id6802785798
 Email: oaktechnologiesfze@gmail.com
 LinkedIn: https://www.linkedin.com/company/oak-tek
 Instagram: @lootpick_app, @openchord_app

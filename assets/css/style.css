@@ -431,6 +431,10 @@ h1, h2, h3, h4 {
 
 .store-cta__icon { width: 30px; height: 33px; flex-shrink: 0; }
 
+/* Store not live yet: same badge, dimmed, not a link */
+.store-cta--soon { opacity: 0.55; cursor: default; }
+.store-cta--soon:hover { transform: none; box-shadow: none; border-color: var(--border); }
+
 .store-cta__text { display: flex; flex-direction: column; line-height: 1.15; }
 .store-cta__small {
   font-size: 0.58rem; font-weight: 700; letter-spacing: 0.12em;
