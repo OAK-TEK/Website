@@ -835,3 +835,18 @@ h1, h2, h3, h4 {
 
 /* Footer "Cookie settings" button, styled like the neighbouring link, 44px tap target */
 .footer__cookie { background: none; border: 0; font: inherit; cursor: pointer; text-decoration: underline; min-height: 44px; padding: 0 0.5rem; }
+
+/* Cookie consent banner (built by /consent.js), in the OAK TEK theme */
+.consent {
+  position: fixed; left: 12px; right: 12px; bottom: 12px; max-width: 34rem; z-index: 99999;
+  background: var(--purple); color: #fff; border: 1px solid rgba(215,169,107,0.35);
+  border-radius: 12px; padding: 1.1rem 1.2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  font-family: var(--font-body); font-size: 0.9rem; line-height: 1.55;
+}
+.consent__title { font-family: var(--font-heading); font-size: 1rem; color: var(--gold); }
+.consent__text { margin: 0.4rem 0 0.9rem; color: rgba(255,255,255,0.85); }
+.consent__text a { color: var(--gold); text-decoration: underline; text-underline-offset: 2px; }
+.consent__actions { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.consent__actions .btn { flex: 1; min-height: 44px; padding: 0.5rem 1rem; cursor: pointer; }
+
+.contact-status { margin-top: 0.9rem; font-size: 0.95rem; color: var(--text-muted); min-height: 1.4em; }

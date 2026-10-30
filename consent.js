@@ -66,17 +66,15 @@
     d.id = 'lp-consent';
     d.setAttribute('role', 'dialog');
     d.setAttribute('aria-label', 'Cookie settings');
-    d.style.cssText =
-      'position:fixed;left:12px;right:12px;bottom:12px;max-width:34rem;z-index:99999;background:#fff;color:#1b1f14;' +
-      'border:1px solid #d9dccf;border-radius:10px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.25);font:14px/1.5 system-ui,sans-serif';
+    d.className = 'consent';
     d.innerHTML =
-      '<strong>Cookies</strong>' +
-      '<p style="margin:6px 0 10px">We use Google Analytics to count visits. It loads only if you accept, and nothing is sent to Google before that. ' +
+      '<strong class="consent__title">Cookies</strong>' +
+      '<p class="consent__text">We use Google Analytics to count visits. It loads only if you accept, and nothing is sent to Google before that. ' +
       'You can change your choice any time under Cookie settings in the footer. See our ' +
-      '<a href="/legal/lootpick/privacy/" style="color:#006900">Privacy Policy</a>.</p>' +
-      '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
-      '<button id="lp-reject" style="flex:1;min-height:44px;padding:8px 12px;border:1px solid #1b1f14;background:#fff;color:#1b1f14;border-radius:8px;cursor:pointer;font:inherit">Reject</button>' +
-      '<button id="lp-accept" style="flex:1;min-height:44px;padding:8px 12px;border:1px solid #006900;background:#006900;color:#fff;border-radius:8px;cursor:pointer;font:inherit">Accept</button>' +
+      '<a href="/legal/">legal pages</a>.</p>' +
+      '<div class="consent__actions">' +
+      '<button type="button" id="lp-reject" class="btn btn--outline-light">Reject</button>' +
+      '<button type="button" id="lp-accept" class="btn btn--primary">Accept</button>' +
       '</div>';
     document.body.appendChild(d);
     function choose(v) {

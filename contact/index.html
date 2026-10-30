@@ -61,7 +61,9 @@
     <section class="section section--offwhite">
       <div class="contact-grid">
         <div class="contact-form">
-          <form id="contact-form">
+          <form id="contact-form" name="contact" method="POST" action="/contact/" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p hidden><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name">
 
@@ -72,6 +74,7 @@
             <textarea id="message" name="message" placeholder="What can we help you with?" required></textarea>
 
             <button type="submit" class="btn btn--primary">Send message</button>
+            <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
           </form>
         </div>
 

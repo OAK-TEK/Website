@@ -33,17 +33,33 @@
   });
 })();
 
-// ===== CONTACT FORM (mailto) =====
+// ===== CONTACT FORM (Netlify Forms, mailto as the fallback) =====
 (function () {
   var form = document.getElementById('contact-form');
   if (!form) return;
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
+  var status = document.getElementById('contact-status');
+  var button = form.querySelector('button[type="submit"]');
+  function mailto() {
+    var name = form.elements.name.value, email = form.elements.email.value, message = form.elements.message.value;
     window.location.href = 'mailto:oaktechnologiesfze@gmail.com'
       + '?subject=' + encodeURIComponent('Website message from ' + name)
       + '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+  }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    button.disabled = true;
+    status.textContent = 'Sending...';
+    fetch(form.getAttribute('action'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      form.reset();
+      status.textContent = 'Thank you. Your message has been sent, and we will reply by email.';
+    }).catch(function () {
+      status.textContent = 'We could not send that here, so we are opening your email app instead.';
+      mailto();
+    }).then(function () { button.disabled = false; });
   });
 })();
