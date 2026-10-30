@@ -832,3 +832,6 @@ h1, h2, h3, h4 {
   .section__heading { font-size: 1.35rem; }
   .footer__nav { gap: 0.9rem; }
 }
+
+/* Footer "Cookie settings" button, styled like the neighbouring link, 44px tap target */
+.footer__cookie { background: none; border: 0; font: inherit; cursor: pointer; text-decoration: underline; min-height: 44px; padding: 0 0.5rem; }

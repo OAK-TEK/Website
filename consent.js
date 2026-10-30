@@ -75,8 +75,8 @@
       'You can change your choice any time under Cookie settings in the footer. See our ' +
       '<a href="/legal/lootpick/privacy/" style="color:#006900">Privacy Policy</a>.</p>' +
       '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
-      '<button id="lp-reject" style="flex:1;padding:8px 12px;border:1px solid #1b1f14;background:#fff;color:#1b1f14;border-radius:8px;cursor:pointer;font:inherit">Reject</button>' +
-      '<button id="lp-accept" style="flex:1;padding:8px 12px;border:1px solid #006900;background:#006900;color:#fff;border-radius:8px;cursor:pointer;font:inherit">Accept</button>' +
+      '<button id="lp-reject" style="flex:1;min-height:44px;padding:8px 12px;border:1px solid #1b1f14;background:#fff;color:#1b1f14;border-radius:8px;cursor:pointer;font:inherit">Reject</button>' +
+      '<button id="lp-accept" style="flex:1;min-height:44px;padding:8px 12px;border:1px solid #006900;background:#006900;color:#fff;border-radius:8px;cursor:pointer;font:inherit">Accept</button>' +
       '</div>';
     document.body.appendChild(d);
     function choose(v) {

@@ -134,3 +134,7 @@
   .legal__inner pre { font-size: 0.72rem; padding: 0.9rem 1rem; }
   .footer__right { flex-direction: column; gap: 0.85rem; }
 }
+
+/* Wide policy tables scroll inside their wrapper instead of the page */
+.legal__inner .tbl { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.legal__inner .tbl table { min-width: 34rem; }
