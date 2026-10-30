@@ -850,3 +850,5 @@ h1, h2, h3, h4 {
 .consent__actions .btn { flex: 1; min-height: 44px; padding: 0.5rem 1rem; cursor: pointer; }
 
 .contact-status { margin-top: 0.9rem; font-size: 0.95rem; color: var(--text-muted); min-height: 1.4em; }
+.contact-note { margin-top: 0.9rem; font-size: 0.85rem; color: var(--text-muted); }
+.contact-note a { text-decoration: underline; text-underline-offset: 2px; }

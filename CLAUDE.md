@@ -46,6 +46,8 @@ small script. No framework, no build step, no package manager.
 | `assets/js/main.js` | Mobile nav, spotlight card, contact form |
 | `consent.js` | Cookie banner and Google Analytics loader |
 | `app-ads.txt` | AdMob seller line. Must stay at the root of `oaktek.org` |
+| `_headers`, `_redirects` | Netlify security headers, and 404s for repo docs (`CLAUDE.md`, `README.md`, `docs/`) |
+| `.well-known/security.txt` | Security contact. Renew `Expires` before 2027-10-30 |
 | `sitemap.xml`, `robots.txt`, `llms.txt` | Crawler files, kept by hand |
 
 Every page repeats the same `<head>`, nav and footer. A change to nav, footer, head
@@ -92,6 +94,8 @@ to find them all.
   `node docs/legal/oaktek-site/build.js`. Wrap the generated body in the site template
   (hero, `legal__meta`, `legal__inner`, footer). Never hand-edit the legal wording
   here.
+- `legal/oaktek/privacy/` is the privacy notice for this website itself. Update it when the site
+  adds a script, form field, cookie or processor, and keep LootPick privacy section 3.6 in step.
 - `legal/lootpick/delete-account/` is hand-written from section 11 of the LootPick
   privacy policy. Re-check it whenever that section changes.
 - A new document must also be listed in `legal/index.html`, `sitemap.xml` and `llms.txt`.
@@ -101,6 +105,8 @@ to find them all.
 - The contact form posts to Netlify Forms (`data-netlify`, honeypot `bot-field`) and
   falls back to a `mailto:` link if the post fails. Form detection and email
   notifications are switched on in the Netlify dashboard.
+- A Global Privacy Control signal is treated as a rejection (see `consent.js`). Keep the privacy
+  notice and this behaviour in step.
 - Consent state lives in `localStorage` under `lp_consent`. The banner is built by
   `consent.js` and styled by the `.consent` classes in `style.css`.
 

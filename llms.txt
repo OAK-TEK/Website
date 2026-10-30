@@ -20,6 +20,7 @@ We hit road bumps in our own hobbies, so we build the apps we wish existed, then
 
 ## Legal
 
+- [OAK TEK website privacy notice](https://oaktek.org/legal/oaktek/privacy/)
 - [LootPick account deletion](https://oaktek.org/legal/lootpick/delete-account/)
 - [Open Chord privacy policy](https://oaktek.org/legal/openchord/privacy/)
 - [Open Chord terms and conditions](https://oaktek.org/legal/openchord/terms/)

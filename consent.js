@@ -54,8 +54,11 @@
     });
   }
 
+  // A Global Privacy Control signal counts as a rejection, even after an earlier Accept.
+  var GPC = navigator.globalPrivacyControl === true;
+
   function apply(c) {
-    if (c && c.analytics) loadGA();
+    if (c && c.analytics && !GPC) loadGA();
     else stopGA();
   }
 
@@ -71,7 +74,7 @@
       '<strong class="consent__title">Cookies</strong>' +
       '<p class="consent__text">We use Google Analytics to count visits. It loads only if you accept, and nothing is sent to Google before that. ' +
       'You can change your choice any time under Cookie settings in the footer. See our ' +
-      '<a href="/legal/">legal pages</a>.</p>' +
+      '<a href="/legal/oaktek/privacy/">privacy notice</a>.</p>' +
       '<div class="consent__actions">' +
       '<button type="button" id="lp-reject" class="btn btn--outline-light">Reject</button>' +
       '<button type="button" id="lp-accept" class="btn btn--primary">Accept</button>' +
@@ -89,7 +92,7 @@
   function init() {
     var c = read();
     apply(c);
-    if (!c) banner(null);
+    if (!c && !GPC) banner(null);
     var link = document.getElementById('cookie-settings');
     if (link) link.addEventListener('click', function (e) { e.preventDefault(); banner(read()); });
   }
