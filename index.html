@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OAK TEK | Independent App Studio in Dubai</title>
-  <meta name="description" content="OAK TEK is an independent app studio in Dubai. LootPick is live on Android and web. Open Chord is out now, free on Android. Apps for the hobbies you love.">
+  <meta name="description" content="OAK TEK is an independent app studio in Dubai. LootPick is live on Android and web. Open Chord is out now, free on Android and iOS. Apps for the hobbies you love.">
   <link rel="canonical" href="https://oaktek.org/">
   <meta name="theme-color" content="#321857">
   <link rel="icon" href="/assets/img/favicon.jpg">
@@ -27,7 +27,7 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "OAK TEK",
-    "legalName": "OAK TEK FZCO",
+    "legalName": "OAK TEK - FZCO",
     "url": "https://oaktek.org",
     "logo": "https://oaktek.org/assets/img/oak-tek-logo-purple.png",
     "description": "OAK TEK is an independent app studio based in Dubai building focused apps for everyday hobby problems.",
@@ -38,7 +38,8 @@
       "https://www.instagram.com/lootpick_app/",
       "https://www.instagram.com/openchord_app/",
       "https://x.com/LootPick_app",
-      "https://x.com/OpenChord_app"
+      "https://x.com/OpenChord_app",
+      "https://www.tiktok.com/@lootpick.quest"
     ]
   }
   </script>
@@ -47,8 +48,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWYTV5YEQL"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YWYTV5YEQL');</script>
+  <script>window.OAKTEK_GA_ID='G-YWYTV5YEQL';</script>
+  <script src="/consent.js" defer></script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -80,7 +81,7 @@
             <a href="/products/" class="btn btn--primary">Meet our apps</a>
             <a href="/about/" class="btn btn--outline-light">About us</a>
           </div>
-          <p class="hero__ticker hero__ticker--live"><span class="hero__ticker-dot"></span>Open Chord is out now on Android. <a href="https://play.google.com/store/apps/details?id=com.oaktek.openchord" target="_blank" rel="noopener">Get it free</a></p>
+          <p class="hero__ticker hero__ticker--live"><span class="hero__ticker-dot"></span>Open Chord is out now on Android and iOS. <a href="/openchord/">Get it free</a></p>
         </div>
 
         <a href="/lootpick/" class="hero-card" id="spotlight-card">
@@ -115,7 +116,7 @@
           <article class="product-card">
             <div class="product-card__top">
               <img src="/assets/img/openchord-logo.png" alt="Open Chord icon" class="product-card__icon product-card__icon--oc" width="46" height="46" loading="lazy">
-              <span class="product-card__badge product-card__badge--green">Out now on Android</span>
+              <span class="product-card__badge product-card__badge--green">Out now on Android and iOS</span>
             </div>
             <h3>Open Chord</h3>
             <p>Learn guitar with no account and no subscription. Real guitar sounds, a built-in tuner and daily practice, and your progress stays on your phone.</p>
@@ -179,6 +180,7 @@
     <div class="footer__bottom">
       <span class="footer__copyright">&copy; 2026 OAK TEK - FZCO. All rights reserved.</span>
       <a href="/legal/" class="footer__privacy">Legal &amp; Privacy</a>
+      <button type="button" id="cookie-settings" class="footer__privacy footer__cookie">Cookie settings</button>
     </div>
   </footer>
   <script src="/assets/js/main.js"></script>

@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/legal.css">
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWYTV5YEQL"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YWYTV5YEQL');</script>
+  <script>window.OAKTEK_GA_ID='G-YWYTV5YEQL';</script>
+  <script src="/consent.js" defer></script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -63,12 +63,20 @@
       <div class="section__inner section__inner--narrow">
 
         <div class="legal-group">
+          <h2 class="legal-group__title">OAK TEK</h2>
+          <ul class="legal-links">
+            <li><a href="/legal/oaktek/privacy/"><span>Website Privacy Notice</span><small>How oaktek.org handles your information</small></a></li>
+          </ul>
+        </div>
+
+        <div class="legal-group">
           <h2 class="legal-group__title">
             <img src="/assets/img/lootpick-icon.png" alt="" width="30" height="30" loading="lazy">LootPick
           </h2>
           <ul class="legal-links">
             <li><a href="/legal/lootpick/privacy/"><span>Privacy Policy</span><small>What we collect, why, and how to delete it</small></a></li>
             <li><a href="/legal/lootpick/terms/"><span>Terms of Service</span><small>Accounts, subscriptions, and acceptable use</small></a></li>
+            <li><a href="/legal/lootpick/delete-account/"><span>Delete Your Account</span><small>How to remove your account and what is kept</small></a></li>
           </ul>
         </div>
 
@@ -112,6 +120,7 @@
     <div class="footer__bottom">
       <span class="footer__copyright">&copy; 2026 OAK TEK - FZCO. All rights reserved.</span>
       <a href="/legal/" class="footer__privacy">Legal &amp; Privacy</a>
+      <button type="button" id="cookie-settings" class="footer__privacy footer__cookie">Cookie settings</button>
     </div>
   </footer>
   <script src="/assets/js/main.js"></script>
